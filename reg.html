@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      body {
+        background-image: url("Boxc/indian-cricket-team-in-action-th58jjhfgx65orej.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        position: relative !important;
+        text-align: center;
+        /*align-items: center;*/
+        padding: 0%;
+        color: #ccc;
+        font-size: xx-large;
+      }
+      form {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      label,
+      input,
+      button {
+        display: block;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>NetBoUnD</h1>
+    <form action="register.php" method="post">
+      <h2>Registration</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Password must contain at least one number, one uppercase and one lowercase letter, and be at least 8 characters long"
+        required
+      />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <button type="submit">Register</button>
+    </form>
+    <p style="text-align: center">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+  </body>
+</html>
