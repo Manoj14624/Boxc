@@ -6,13 +6,14 @@
     <title>Login</title>
     <style>
       body {
-        background-image: url(Boxc/indian-cricket-team-in-action-th58jjhfgx65orej.jpg);
+        background-image: url("Boxc/indian-cricket-team-in-action-th58jjhfgx65orej.jpg");
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
+        flex-direction: column;
       }
       form {
         width: 300px;
@@ -21,8 +22,12 @@
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.8);
       }
-      h2 {
+      .head1 {
+        font-size: 40px;
+        color: #009900;
+        font-weight: bold;
         text-align: center;
+        margin-top: 0px;
       }
       label,
       input,
@@ -39,10 +44,16 @@
         border-radius: 5px;
         cursor: pointer;
       }
+      p {
+        color: #f7f4f4;
+      }
     </style>
   </head>
   <body>
-    <h1>NetBoUnD</h1>
+    <header>
+      <div class="head1">NetBoUnD</div>
+    </header>
+
     <form action="login.php" method="post">
       <h2>Login</h2>
       <label for="username">Username:</label>
@@ -52,7 +63,7 @@
       <button type="submit">Login</button>
     </form>
     <p style="text-align: center">
-      Don't have an account? <a href="register.html">Register here</a>
+      Don't have an account? <a href="reg.html">Register here</a>
     </p>
   </body>
 </html>
