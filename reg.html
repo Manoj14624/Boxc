@@ -14,14 +14,14 @@
         height: 100vh;
         margin: 0;
         padding: 0;
+        flex-direction: column;
       }
-      h1 {
-        position: relative !important;
+      .head1 {
+        font-size: 40px;
+        color: #009900;
+        font-weight: bold;
         text-align: center;
-        /*align-items: center;*/
-        padding: 0%;
-        color: #ccc;
-        font-size: xx-large;
+        margin-top: 0px;
       }
       form {
         width: 300px;
@@ -49,10 +49,15 @@
         border-radius: 5px;
         cursor: pointer;
       }
+      p {
+        color: #f9f8f8;
+      }
     </style>
   </head>
   <body>
-    <h1>NetBoUnD</h1>
+    <header>
+      <div class="head1">NetBoUnD</div>
+    </header>
     <form action="register.php" method="post">
       <h2>Registration</h2>
       <label for="username">Username:</label>
